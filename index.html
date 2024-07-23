@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riemann Sum Visualization</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="header">Riemann Sum Visualization</h1>
+    <div id="cartesian-plane">
+      <div id="calculator"></div>
+    </div>
+    <div class="slider-container">
+      <h3 class="slider-text">Intervals:</h3>
+      <input
+        type="range"
+        min="1"
+        max="200"
+        value="100"
+        class="slider"
+        id="number-of-intervals"
+      />
+      <span class="slidervalue" id="slider-text">n = 50</span>
+    </div>
+    <div class="orientation-container">
+      <h3 class="orientation-text">Type of Orientation:</h3>
+      <div class="drop-down">
+        <select id="drop-down">
+          <option value="0">Left-Side Approximation</option>
+          <option value="0.5">Midpoint Approximation</option>
+          <option value="1">Right-Side Approximation</option>
+        </select>
+      </div>
+    </div>
+    <script src="https://www.desmos.com/api/v1.7/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
